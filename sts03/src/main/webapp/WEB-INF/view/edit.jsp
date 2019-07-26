@@ -24,8 +24,8 @@
 	        <div>비트교육센터</div>
 	      </a>
 	    </div>
-	   <p class="navbar-text"><a href="#" class="navbar-link">HOME</a></p>
-	   <p class="navbar-text"><a href="#" class="navbar-link">LIST</a></p>
+	   <p class="navbar-text"><a href="/" class="navbar-link">HOME</a></p>
+	   <p class="navbar-text"><a href="/bbs/list.bit"" class="navbar-link">LIST</a></p>
 	   <p class="navbar-text navbar-right">/  <a href="#" class="navbar-link">JOIN</a></p>
 	   <p class="navbar-text navbar-right"><a href="#" class="navbar-link">LOGIN</a></p>
 	  </div>
@@ -33,16 +33,18 @@
 	<div class="container">
 	
 		<div class="row">
+		<div class="row">
 			<div class="col-md-12">
-			
+				<div class="jumbotron">
+				  <h1>입력페이지</h1>
+				  <p>...</p>
+				  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+				</div>
 			</div>
 		</div>
-		
+				
 		<div class="row">
-			<div class="jumbotron">
-			  <h1>Hello, world!</h1>
-			  <p>...</p>
-			  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+			<div class="col-md-12">
 			</div>
 		</div>
 		

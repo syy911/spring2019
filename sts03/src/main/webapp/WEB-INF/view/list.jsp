@@ -25,25 +25,20 @@
 	        <div>비트교육센터</div>
 	      </a>
 	    </div>
-	   <p class="navbar-text"><a href="#" class="navbar-link">HOME</a></p>
-	   <p class="navbar-text"><a href="#" class="navbar-link">LIST</a></p>
+	   <p class="navbar-text"><a href="/" class="navbar-link">HOME</a></p>
+	   <p class="navbar-text"><a href="/bbs/list.bit" class="navbar-link">LIST</a></p>
 	   <p class="navbar-text navbar-right">/  <a href="#" class="navbar-link">JOIN</a></p>
 	   <p class="navbar-text navbar-right"><a href="#" class="navbar-link">LOGIN</a></p>
 	  </div>
 	</nav>
-	<div class="container">
-	
+	<div class="container">	
 		<div class="row">
 			<div class="col-md-12">
-			
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="jumbotron">
-			  <h1>리스트페이지</h1>
-			  <p>...</p>
-			  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+				<div class="jumbotron">
+				  <h1>리스트페이지</h1>
+				  <p>...</p>
+				  <p><a class="btn btn-primary btn-lg" href="add.bit" role="button">글쓰기</a></p>
+				</div>
 			</div>
 		</div>
 		
@@ -61,10 +56,10 @@
 					<tbody>
 						<c:forEach items="${alist }" var="bean">
 							<tr>
-								<td><a href="#">${bean.num }</a></td>
-								<td><a href="#">${bean.sub }</a></td>
-								<td><a href="#">${bean.name }</a></td>
-								<td><a href="#">${bean.nalja }</a></td>
+								<td><a href="detail.bit?idx=${bean.num }">${bean.num }</a></td>
+								<td><a href="detail.bit?idx=${bean.num }">${bean.sub }</a></td>
+								<td><a href="detail.bit?idx=${bean.num }">${bean.name }</a></td>
+								<td><a href="detail.bit?idx=${bean.num }">${bean.nalja }</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>

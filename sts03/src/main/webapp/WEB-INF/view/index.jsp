@@ -28,19 +28,13 @@
 	        <div>비트교육센터</div>
 	      </a>
 	    </div>
-	   <p class="navbar-text"><a href="#" class="navbar-link">HOME</a></p>
-	   <p class="navbar-text"><a href="#" class="navbar-link">LIST</a></p>
+	   <p class="navbar-text"><a href="/" class="navbar-link">HOME</a></p>
+	   <p class="navbar-text"><a href="/bbs/list.bit" class="navbar-link">LIST</a></p>
 	   <p class="navbar-text navbar-right">/  <a href="#" class="navbar-link">JOIN</a></p>
 	   <p class="navbar-text navbar-right"><a href="#" class="navbar-link">LOGIN</a></p>
 	  </div>
 	</nav>
 	<div class="container">
-	
-		<div class="row">
-			<div class="col-md-12">
-			</div>
-		</div>
-		
 		<div class="row">
 			<div class="col-md-12">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

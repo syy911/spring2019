@@ -8,26 +8,25 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
 import com.bit.day03.model.Day02Dao;
-import com.bit.day03.model.Day02Dao2;
 
-public class ListController implements Controller {
-	Day02Dao2 dao;
+public class OneController implements Controller {
+	private Day02Dao dao;
+	private String msg;
 	
-	//xml을 통해서 객체를 주입받아 사용
-	public void setDao(Day02Dao2 dao) {
+	public void setDao(Day02Dao dao) {
 		this.dao = dao;
+	}
+	
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
 	
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ModelAndView mav = new ModelAndView();
-		
-		//jsp페이지에 EL로 보내서 사용하기
-		mav.addObject("alist", dao.selectAll());
-		
-		//jsp페이지 지정
-		mav.setViewName("list");
-		
+		mav.addObject("msg", msg);
+		mav.addObject("bean", dao.selectOne(Integer.parseInt(request.getParameter("idx"))));
+		mav.setViewName("detail");
 		return mav;
 	}
 
